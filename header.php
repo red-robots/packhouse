@@ -17,8 +17,12 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <link href="https://fonts.googleapis.com/css?family=News+Cycle:400,700|Oswald:300,400" rel="stylesheet">
+<script src="https://use.fontawesome.com/762c66dd2b.js"></script>
 
-<?php wp_head(); ?>
+<?php wp_head(); 
+
+
+if( !is_front_page() ) { $bg = 'image'; }?>
 </head>
 
 <body <?php body_class(); ?>>
@@ -31,7 +35,11 @@
 		</div>
 	</div>
 
-	<header id="masthead" class="site-header" role="banner">
+	<header id="masthead" class="site-header " role="banner">
+		<?php if( !is_front_page() ) { ?>
+			<!-- <div class="image"></div> -->
+		<?php } ?>
+		<!-- <div class="overlay"></div> -->
 		<div class="wrapper">
 			
 			<?php if(is_home()) { ?>

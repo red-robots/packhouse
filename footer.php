@@ -25,7 +25,7 @@ $reservation_link = get_field('reservation_link', 'option');
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 
-	<?php if( is_front_page() ) { ?>
+	<?php if( !is_page('reservations') ) { ?>
 		<div class="res-wrap">
 			<div class="reservation-wrapper wow bounceInUp">
 				<div class="request-res">
@@ -128,7 +128,7 @@ $reservation_link = get_field('reservation_link', 'option');
 		</div><!-- wrapper -->
 
 		<section class="creds">
-			
+			site by <a href="http://bellaworksweb.com" target="_blank">Bellaworks</a> | <a href="<?php the_field('sitemap_link','option'); ?>">sitemap</a>
 		</section>
 
 	</footer><!-- #colophon -->
@@ -138,7 +138,7 @@ $reservation_link = get_field('reservation_link', 'option');
 
 wp_footer(); 
 
-the_field('google_analytics', 'opiton');
+the_field('google_analytics', 'option');
 
 ?>
 

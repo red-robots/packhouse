@@ -1,20 +1,17 @@
 
-div {
-	/* These are technically the same, but use both */
-	overflow-wrap: break-word;
-	word-wrap: break-word;
-
-	-ms-word-break: break-all;
-	/* This is the dangerous one in WebKit, as it breaks things wherever */
-	word-break: break-all;
-	/* Instead use this non-standard one: */
-	word-break: break-word;
+* {
+	
 
 	/* Adds a hyphen where the word breaks, if supported (No Blink) */
-	-ms-hyphens: auto;
-	-moz-hyphens: auto;
-	-webkit-hyphens: auto;
-	hyphens: auto;
+	-ms-hyphens: none;
+	-moz-hyphens: none;
+	-webkit-hyphens: none;
+	hyphens: none;
+}
+.site {
+	width: 100%;
+	float: left;
+	margin: 0;
 }
 .clear {clear: both;}
 .wrapper {
@@ -79,6 +76,11 @@ div {
 		width: 100%;
 		color: #fff;
 		text-align: center;
+		font: {
+			weight: 400;
+			size: 22px;
+		}
+
 		
 		@media screen and (min-width: $tabwidth) {
 			width: auto; 
@@ -92,9 +94,34 @@ header#masthead {
 	width: 100%;
 	float: left;
 	padding: 20px 0;
-	background-color: rgba(255,255,255,.8);
+	
 	z-index: 50;
 	position: relative;
+	.image {
+		@media screen and (min-width: $tabwidth) {
+			background: {
+				image: url(images/header-bg.jpg);
+				repeat: no-repeat;
+				size: cover;
+			}
+			width: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			z-index: 48;
+		}
+		
+	}
+	.overlay {
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		z-index: 49;
+		background-color: rgba(255,255,255,.7);
+	}
 }
 
 /* Logo */
@@ -116,6 +143,14 @@ header#masthead {
 		margin: 0px auto 0px auto;
 	}
 	@media screen and (min-width: $deskwidth) {
+		width: 400px;
+		height: 105px;
+	}
+	@media screen and (min-width: $largewidth) {
+		width: 400px;
+		height: 105px;
+	}
+	@media screen and (min-width: $xlargewidth) {
 		width: 450px;
 		height: 118px;
 	}
@@ -173,16 +208,16 @@ footer.site-footer {
 	}
 
 	@media screen and (min-width: $tabwidth) {
-		font-size: 16px;
+		font-size: 14px;
 	}
 	@media screen and (min-width: $deskwidth) {
-		font-size: 18px;
+		font-size: 20px;
 	}
 
 	h3 {
 		margin: 0 0 5px 0;
 		font: {
-			size: 21px;
+			size: 24px;
 			weight: 300;
 		}
 		
@@ -212,6 +247,12 @@ footer.site-footer {
 	text-align: center;
 
 	@media screen and (min-width: $tabwidth) {
+		width: 30%;
+		float: left;
+		margin: 0 3% 50px 0;
+		text-align: left;
+	}
+	@media screen and (min-width: $midwidth) {
 		width: 22%;
 		float: left;
 		margin: 0 3% 50px 0;
@@ -223,6 +264,12 @@ footer.site-footer {
 	margin: 0 auto 40px auto;
 	text-align: center;
 	@media screen and (min-width: $tabwidth) {
+		width: 30%;
+		float: left;
+		margin: 0 0% 50px 0;
+		text-align: left;
+	}
+	@media screen and (min-width: $midwidth) {
 		width: 22%;
 		float: left;
 		margin: 0 0% 50px 0;
@@ -234,6 +281,12 @@ footer.site-footer {
 	margin: 0 auto 40px auto;
 	text-align: center;
 	@media screen and (min-width: $tabwidth) {
+		width: 30%;
+		float: left;
+		margin: 0 0% 50px 0;
+		text-align: left;
+	}
+	@media screen and (min-width: $midwidth) {
 		width: 22%;
 		float: left;
 		margin: 0 0% 50px 0;
@@ -245,6 +298,11 @@ footer.site-footer {
 	margin: 0 auto 40px auto;
 	text-align: center;
 	@media screen and (min-width: $tabwidth) {
+		width: 50%;
+		
+		text-align: left;
+	}
+	@media screen and (min-width: $midwidth) {
 		width: 22%;
 		float: right;
 		text-align: left;
@@ -305,7 +363,7 @@ footer.site-footer {
 		margin: 0 auto 50px auto;
 		@media screen and (min-width: $tabwidth) {
 			width: 65%;
-			margin: 0 auto;
+			margin: 50px auto 0 auto;
 		}
 	}
 	.img-packhouse {
@@ -318,38 +376,40 @@ footer.site-footer {
 	}
 	.img-mayo {
 		width: 75%;
-		margin: 0 auto 50px auto;
+		margin: 0 auto 50px 20px;
 		@media screen and (min-width: $tabwidth) {
 			width: 70%;
-			float: right;
+			float: left;
+			margin: 50px auto 0 20px;
 		}
 	}
 	.img-joe {
 		width: 75%;
-		margin: 0 auto 50px auto;
+		margin: 10px auto 50px auto;
 		@media screen and (min-width: $tabwidth) {
 			width: 70%;
-			float: right;
+			// float: left;
+			margin: 50px auto 0px auto;
 		}
 	}
 
 
 }
 .rollover {
-		img {
-			filter: brightness(0) invert(1);
-			&:hover {
-				filter: none;
-			}
+	img {
+		filter: brightness(0) invert(0);
+		&:hover {
+			filter: none;
 		}
 	}
+}
 .social {
 	i {
 		width: auto;
 		height: auto;
 		position: relative;
 		margin: 0 15px 0 0;
-		font-size: 40px;
+		font-size: 30px;
 		transform: scale(1);
 		@include transition(all ease .3s);
 		&:hover {
@@ -375,20 +435,23 @@ footer.site-footer {
 		margin: -80px auto 80px auto;
 	}
 	@media screen and (min-width: $deskwidth) {
-		margin: -20px auto 80px auto;
+		margin: -80px auto 80px auto;
 	}
 }
 .reservation-wrapper {
 	width: auto;
 	
 	display: inline-block;
-	background: {
-		image: url(images/reservation.png);
-		color: rgba(0,0,0, .5);
-		repeat: no-repeat;
-		size: cover;
+	background-color: rgba(#422917, 1);
+	padding: 20px 100px;
+	@media screen and (min-width: $tabwidth) {
+		background: {
+			image: url(images/reservation.png);
+			color: rgba(#422917, 1);
+			repeat: no-repeat;
+			size: cover;
+		}
 	}
-	padding: 20px 40px;
 
 	.request-res a {
 		width: auto;
@@ -401,6 +464,22 @@ footer.site-footer {
 
 		&:hover {
 			background-color: rgba(255,255,255,.4);
+		}
+	}
+}
+section.creds {
+	width: 100%;
+	float: left;
+	margin: 30px auto 20px auto;
+	color: #fff;
+	font-size: 12px;
+	text-align: center;
+	a {
+		color: rgba(255,255,255,.8);
+		text-decoration: none;
+
+		&:hover {
+			color: rgba(255,255,255,1);
 		}
 	}
 }

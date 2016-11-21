@@ -17,14 +17,14 @@ h1.entry-title {
 		size: 30px;
 	}
 	color: $color-brown;
-	&:after {
-		width: 90%;
-		content: '';
-		border-bottom: 1px solid #000;
-		position: absolute;
-		bottom: -10px;
-		left: 5%;
-		// right: 50%;
+	// &:after {
+	// 	width: 90%;
+	// 	content: '';
+	// 	border-bottom: 1px solid #000;
+	// 	position: absolute;
+	// 	bottom: -10px;
+	// 	left: 5%;
+	// 	// right: 50%;
 
-	}
+	// }
 }
