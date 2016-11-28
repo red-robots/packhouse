@@ -37,9 +37,9 @@ if( !is_front_page() ) { $bg = 'image'; }?>
 
 	<header id="masthead" class="site-header " role="banner">
 		<?php if( !is_front_page() ) { ?>
-			<!-- <div class="image"></div> -->
+			<div class="image"></div>
 		<?php } ?>
-		<!-- <div class="overlay"></div> -->
+		<div class="overlay"></div>
 		<div class="wrapper">
 			
 			<?php if(is_home()) { ?>
