@@ -39,7 +39,7 @@ if( !is_front_page() ) { $bg = 'image'; }?>
 		<?php if( !is_front_page() ) { ?>
 			<div class="image"></div>
 		<?php } ?>
-		<div class="overlay"></div>
+		<div class="overlay"></div><!-- overlay -->
 		<div class="wrapper">
 			
 			<?php if(is_home()) { ?>
