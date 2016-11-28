@@ -437,6 +437,9 @@ footer.site-footer {
 	@media screen and (min-width: $deskwidth) {
 		margin: -80px auto 80px auto;
 	}
+	@media screen and (min-width: $largewidth) {
+		margin: -0px auto 80px auto;
+	}
 }
 .reservation-wrapper {
 	width: auto;
