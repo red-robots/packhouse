@@ -19,6 +19,11 @@ $facebook_link = get_field('facebook_link', 'option');
 $google_analytics = get_field('google_analytics', 'option');
 $sitemap = get_field('sitemap_link', 'option');
 $reservation_link = get_field('reservation_link', 'option');
+
+$treehouse_kitchen = get_field('treehouse_kitchen', 'option');
+$mayo_bird = get_field('mayo_bird', 'option');
+$summit_room = get_field('summit_room', 'option');
+$joe_nosh = get_field('joe_nosh', 'option');
 ?>
 
 	</div><!-- #content -->
@@ -97,7 +102,7 @@ $reservation_link = get_field('reservation_link', 'option');
 				<div class="img-center">
 					<h3 class="center">A PART OF</h3>
 					<div class="rollover">
-						<a href="#">
+						<a href="<?php echo $treehouse_kitchen; ?>" target="_blank">
 							<img alt="Tree House Kitchen" title="Tree House Kitchen" src="<?php bloginfo('template_url'); ?>/images/tree-house-kitchen.png">
 						</a>
 					</div><!-- roll over -->
@@ -105,21 +110,21 @@ $reservation_link = get_field('reservation_link', 'option');
 			</section>
 			<div class="group-item">
 				<div class="img-summit rollover">
-					<a href="#">
+					<a href="<?php echo $summit_room; ?>" target="_blank">
 						<img alt="Summit Room" title="Summit Room" src="<?php bloginfo('template_url'); ?>/images/summit-room.png">
 					</a>
 				</div>
 			</div>
 			<div class="group-item ">
 				<div class="img-joe rollover">
-					<a href="#">
+					<a href="<?php echo $joe_nosh; ?>" target="_blank">
 						<img alt="Joe and Nosh" title="Joe and Nosh" src="<?php bloginfo('template_url'); ?>/images/joe-and-nosh.png">
 					</a>
 				</div>
 			</div>
 			<div class="group-item ">
 				<div class="img-mayo rollover">
-					<a href="#">
+					<a href="<?php echo $mayo_bird; ?>" target="_blank">
 						<img alt="Mayobird" title="Mayobird" src="<?php bloginfo('template_url'); ?>/images/mayobird.png">
 					</a>
 				</div>

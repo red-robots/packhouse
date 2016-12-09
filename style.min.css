@@ -629,7 +629,7 @@ a{color:#0999f3}
 a:hover,a:focus,a:active{color:midnightblue}
 a:focus{outline:thin dotted}
 a:hover,a:active{outline:0}
-.main-navigation{clear:both;display:block;float:left;width:100%;text-align:center;font-family:"News Cycle",sans-serif;text-transform:uppercase;position:relative;z-index:1000}
+.main-navigation{clear:both;display:block;float:left;width:100%;text-align:center;font-family:"News Cycle",sans-serif;text-transform:uppercase;position:relative;z-index:1000;opacity:0}
 @media screen and (min-width:600px){.main-navigation{margin:20px auto 0 auto;clear:none}
 }@media screen and (min-width:900px){.main-navigation{margin:-70px auto 0 auto;clear:none}
 }@media screen and (min-width:1200px){.main-navigation{margin:-100px auto 0 auto;width:100%}
@@ -827,7 +827,7 @@ footer.site-footer{width:100%;background-color:#592b1d;z-index:40;float:left;pad
 .social i{width:auto;height:auto;position:relative;margin:0 15px 0 0;font-size:30px;-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1);-webkit-transition:all ease .3s;transition:all ease .3s}
 .social i:hover{-webkit-transform:scale(0.8);-ms-transform:scale(0.8);transform:scale(0.8)}
 .social i a{display:block;width:100%;height:100%;position:absolute;top:0;left:0}
-.res-wrap{width:100%;text-align:center;z-index:60;margin:-20px auto 80px auto;overflow:hidden}
+.res-wrap{opacity:0;width:100%;text-align:center;z-index:60;margin:-20px auto 80px auto;overflow:hidden}
 @media screen and (min-width:600px){.res-wrap{margin:-80px auto 80px auto}
 }@media screen and (min-width:1200px){.res-wrap{margin:-80px auto 80px auto}
 }@media screen and (min-width:1300px){.res-wrap{margin:-0 auto 80px auto}
