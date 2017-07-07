@@ -867,7 +867,11 @@ section.hero .hero-text{line-height:1.2;color:#fff;width:90%;text-align:center;f
 .menu-top-button .small-button a{text-decoration:none;color:#fff;display:block;-webkit-transition:all ease .3s;transition:all ease .3s}
 .menu-top-button .small-button a:hover{background-color:#fff;color:#592b1d}
 .menu-top-button-page{width:auto;padding:20px 0}
-.blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}
+.contact-left{width:100%;margin:0 0 30px 0;float:left}
+@media screen and (min-width:600px){.contact-left{width:45%}
+}.contact-right{width:100%;margin:0 0 30px 0;float:left}
+@media screen and (min-width:600px){.contact-right{width:45%;float:right}
+}.blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}
 .comment-content a{word-wrap:break-word}
 .bypostauthor{display:block}
 .infinite-scroll .posts-navigation,.infinite-scroll.neverending .site-footer{display:none}

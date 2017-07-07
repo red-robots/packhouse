@@ -157,3 +157,20 @@ section.page-contents {
 	width: auto;
 	padding: 20px 0;
 }
+.contact-left {
+	width: 100%;
+	margin: 0 0 30px 0;
+	float: left;
+	@media screen and (min-width: $tabwidth) {
+		width: 45%;
+	}
+}
+.contact-right {
+	width: 100%;
+	margin: 0 0 30px 0;
+	float: left;
+	@media screen and (min-width: $tabwidth) {
+		width: 45%;
+		float: right;
+	}
+}
