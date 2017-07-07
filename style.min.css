@@ -862,7 +862,10 @@ section.hero .hero-text{line-height:1.2;color:#fff;width:90%;text-align:center;f
 }@media screen and (min-width:1200px){.smenu-item{width:20%}
 }.smenu-item .menu-image{width:100%;float:left;line-height:0}
 .smenu-item .menu-image img{width:100%}
-.menu-top-button{width:100%;float:left;padding:20px 0}
+.menu-top-button{width:100%;float:left;padding:20px 0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;background-color:#592b1d}
+.menu-top-button .small-button{width:80%;padding:2%;color:#fff;border:1px solid #fff;text-align:center}
+.menu-top-button .small-button a{text-decoration:none;color:#fff;display:block;-webkit-transition:all ease .3s;transition:all ease .3s}
+.menu-top-button .small-button a:hover{background-color:#fff;color:#592b1d}
 .menu-top-button-page{width:auto;padding:20px 0}
 .blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}
 .comment-content a{word-wrap:break-word}
