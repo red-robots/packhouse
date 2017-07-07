@@ -629,7 +629,7 @@ a{color:#0999f3}
 a:hover,a:focus,a:active{color:midnightblue}
 a:focus{outline:thin dotted}
 a:hover,a:active{outline:0}
-.main-navigation{clear:both;display:block;float:left;width:100%;text-align:center;font-family:"News Cycle",sans-serif;text-transform:uppercase;position:relative;z-index:1000;opacity:0}
+.main-navigation{clear:both;display:block;float:left;width:100%;text-align:center;font-family:"News Cycle",sans-serif;text-transform:uppercase;position:relative;z-index:1000}
 @media screen and (min-width:600px){.main-navigation{margin:20px auto 0 auto;clear:none}
 }@media screen and (min-width:900px){.main-navigation{margin:-70px auto 0 auto;clear:none}
 }@media screen and (min-width:1200px){.main-navigation{margin:-100px auto 0 auto;width:100%}

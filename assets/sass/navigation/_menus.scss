@@ -1,4 +1,12 @@
 .main-navigation {
+	/*
+
+		Change Opacity until Launch
+
+	*/
+	// opacity: 0;
+
+
 	clear: both;
 	display: block;
 	float: left;
@@ -8,15 +16,6 @@
 	text-transform: uppercase;
 	position: relative;
 	z-index: 1000;
-
-	/*
-
-		Change Opacity until Launch
-
-	*/
-	opacity: 0;
-
-	
 	@media screen and (min-width: $tabwidth) {
 		margin: 20px auto 0 auto;
 		clear: none;
