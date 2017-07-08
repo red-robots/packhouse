@@ -19,11 +19,14 @@ get_header(); ?>
 						$menu_pdf = get_field('menu_pdf');
 						$size = 'full';
 
+// echo '<pre>';
+// print_r($menu_picture);
+// echo '</pre>';
 						?>
 
-						<a href="<?php echo $menu_pdf;?>">Download Menu (pdf)</a>
-						<div class="clear"></div>
-						<div class="menu-image"><?php echo wp_get_attachment_image( $menu_picture, $size ); ?></div>
+						<a href="<?php echo $menu_pdf['url'];?>">Download Menu (pdf)</a>
+						<div class="clear"></div><br>
+						<div class="menu-image"><img src="<?php echo $menu_picture['url'];?>"></div>
 					</div>
 				</section>
 			<?php endwhile; ?>
