@@ -23,7 +23,7 @@ get_header(); ?>
 
 						<a href="<?php echo $menu_pdf;?>">Download Menu (pdf)</a>
 						<div class="clear"></div>
-						<div class="menu-image"><?php echo wp_get_attachment_image( $drinkimage, $size ); ?></div>
+						<div class="menu-image"><?php echo wp_get_attachment_image( $menu_picture, $size ); ?></div>
 					</div>
 				</section>
 			<?php endwhile; ?>
