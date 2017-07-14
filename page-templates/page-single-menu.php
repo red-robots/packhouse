@@ -16,6 +16,7 @@ get_header(); ?>
 						<?php the_content(); 
 
 						$menu_picture = get_field('menu_picture');
+						$extra_menu_image = get_field('extra_menu_image');
 						$menu_pdf = get_field('menu_pdf');
 						$size = 'full';
 
@@ -27,6 +28,8 @@ get_header(); ?>
 						<a href="<?php echo $menu_pdf['url'];?>">Download Menu (pdf)</a>
 						<div class="clear"></div><br>
 						<div class="menu-image"><img src="<?php echo $menu_picture['url'];?>"></div>
+						<div class="clear"></div><br>
+						<div class="menu-image"><img src="<?php echo $extra_menu_image['url'];?>"></div>
 					</div>
 				</section>
 			<?php endwhile; ?>
