@@ -66,7 +66,7 @@ $joe_nosh = get_field('joe_nosh', 'option');
 					<h3>CONTACT</h3>
 					<?php echo '(p) ' . $phone; ?>
 					<br>
-					<?php echo '(e) <a href="'. $spam . '">' . $spam . '</a>'; ?>
+					<?php echo '(e) <a href="mailto:'. $spam . '">' . $spam . '</a>'; ?>
 				</div>
 				<div class="item">
 					<div class="social">
