@@ -34,7 +34,7 @@ $joe_nosh = get_field('joe_nosh', 'option');
 		<div class="res-wrap">
 			<div class="reservation-wrapper wow bounceInUp">
 				<div class="request-res">
-					<a href="<?php echo $reservation_link; ?>">
+					<a href="<?php echo $reservation_link; ?>" target="_blank">
 						REQUEST A RESERVATION
 					</a>
 				</div>
