@@ -32,7 +32,7 @@ $joe_nosh = get_field('joe_nosh', 'option');
 
 	<?php if( !is_page('reservations') ) { ?>
 		<div class="res-wrap">
-			<div class="reservation-wrapper  bounceInUp">
+			<div class="reservation-wrapper wow bounceInUp">
 				<div class="request-res">
 					<a href="<?php echo $reservation_link; ?>" >
 						REQUEST A RESERVATION

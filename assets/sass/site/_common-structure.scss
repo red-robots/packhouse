@@ -433,12 +433,9 @@ footer.site-footer {
 
 	*/
 	// opacity: 0;
-
-
-	
 	width: 100%;
 	text-align: center;
-	z-index:60;
+	z-index:6000;
 	margin: -20px auto 80px auto;
 	overflow: hidden;
 	@media screen and (min-width: $tabwidth) {
