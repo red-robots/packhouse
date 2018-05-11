@@ -6,6 +6,13 @@
  */
 
 jQuery(document).ready(function ($) {
+
+	/*
+	*
+	*	Wow Animation
+	*
+	------------------------------------*/
+	new WOW().init();
 	
 	/*
 	*
@@ -88,11 +95,6 @@ jQuery(document).ready(function ($) {
 	------------------------------------*/
 	$('.js-blocks').matchHeight();
 
-	/*
-	*
-	*	Wow Animation
-	*
-	------------------------------------*/
-	new WOW().init();
+	
 
 });// END #####################################    END

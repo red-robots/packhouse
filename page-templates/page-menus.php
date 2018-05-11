@@ -48,7 +48,7 @@ get_header(); ?>
 				?>
 				<section class="page-contents">
 					<h1 class="entry-title"><?php the_title(); ?></h1>
-					<div class="entry-content">
+					<div class="entry-content menus">
 						<?php the_content(); ?>
 
 						<?php if(is_page('menus')) : ?>
@@ -59,16 +59,6 @@ get_header(); ?>
 									</div>
 								</div>
 								<div class="menu-image"><?php echo wp_get_attachment_image( $brunchimage, $size ); ?></div>
-							</div>
-
-							<div class="smenu-item">
-								<div class="menu-top-button">
-									<div class="small-button">
-										<a href="<?php echo $lunch_menu_link; ?>">LUNCH MENU</a>
-									</div>
-								</div>
-								<div class="menu-image"><?php echo wp_get_attachment_image( $lunchimage, $size ); ?></div>
-								
 							</div>
 
 							<div class="smenu-item">
