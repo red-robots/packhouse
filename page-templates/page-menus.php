@@ -52,14 +52,14 @@ get_header(); ?>
 						<?php the_content(); ?>
 
 						<?php if(is_page('menus')) : ?>
-							<div class="smenu-item">
+							<!-- <div class="smenu-item">
 								<div class="menu-top-button">
 									<div class="small-button">
 										<a href="<?php echo $brunch_menu_link; ?>">BRUNCH MENU</a>
 									</div>
 								</div>
 								<div class="menu-image"><?php echo wp_get_attachment_image( $brunchimage, $size ); ?></div>
-							</div>
+							</div> -->
 
 							<div class="smenu-item">
 								<div class="menu-top-button">
